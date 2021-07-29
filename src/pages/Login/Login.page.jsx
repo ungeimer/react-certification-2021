@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../providers/Auth';
 import './Login.styles.css';
 
@@ -15,7 +15,9 @@ function LoginPage() {
   }
 
   return (
+
     <section className="login">
+    
       <h1>Welcome back!</h1>
       <form onSubmit={authenticate} className="login-form">
         <div className="form-group">
@@ -32,7 +34,11 @@ function LoginPage() {
         </div>
         <button type="submit">login</button>
       </form>
+      <Link to="/" className="home-link">
+        home
+      </Link>
     </section>
+    
   );
 }
 

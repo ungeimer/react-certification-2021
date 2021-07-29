@@ -1,5 +1,8 @@
 .login {
   width: 300px;
+  align-items: center;
+  padding: 1rem 2rem;
+ 
 }
 
 .login h1 {
@@ -45,3 +48,24 @@
   border: none;
   border-radius: 3px;
 }
+
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3rem;
+  
+}
+
+
+  .child {
+  top: 100px;
+  left: 300px;
+  margin: -35px 0 0 -35px;
+  
+  }

@@ -27,7 +27,10 @@ function HomePage() {
             </Link>
             <span className="separator" />
             <Link to="/secret">show me something cool →</Link>
+            <span className="separator" />
+            <Link to="/main">Go to main page →</Link>
           </span>
+          
         </>
       ) : (
         <Link to="/login">let me in →</Link>

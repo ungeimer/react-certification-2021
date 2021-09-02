@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Helmet } from 'react-helmet'
 
-import App from './components/App';
+import { Principal } from './Principal';
 import './global.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const TITLE = 'WizeTube';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Principal />
+    <Helmet>
+          <title>{ TITLE }</title>
+        </Helmet>
   </React.StrictMode>,
   document.getElementById('root')
 );

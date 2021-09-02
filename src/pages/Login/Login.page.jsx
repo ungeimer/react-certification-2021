@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router';
+import { useHistory, Link } from 'react-router-dom';
 
 import { useAuth } from '../../providers/Auth';
 import './Login.styles.css';
@@ -11,7 +11,7 @@ function LoginPage() {
   function authenticate(event) {
     event.preventDefault();
     login();
-    history.push('/secret');
+    history.push('/');
   }
 
   return (
@@ -31,6 +31,9 @@ function LoginPage() {
           </label>
         </div>
         <button type="submit">login</button>
+        <div>
+          <Link to="/"> Go back </Link>
+        </div>
       </form>
     </section>
   );
